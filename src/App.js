@@ -1,5 +1,5 @@
 import React from 'react';
-import { 
+import {
   BrowserRouter as Router,
   Switch,
   Route,
@@ -7,21 +7,18 @@ import {
 import Home from './pages/Home';
 import Search from './pages/Search';
 
-
-
-
 function App() {
   return (
-     <Router>
-       <Switch>
-         <Route exact path="/">
+    <Router>
+      <Switch>
+        <Route exact path="/">
           <Home />
-         </Route>
-         <Route path="/search">
+        </Route>
+        <Route path="/search">
           <Search />
-         </Route>
-       </Switch>
-     </Router>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
