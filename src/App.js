@@ -6,10 +6,12 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home';
 import Search from './pages/Search';
+import Header from './components/Header';
 
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route exact path="/">
           <Home />
